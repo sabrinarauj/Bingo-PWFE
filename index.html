@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Sorteador - Bingo</title>
+    <!--links para css e js-->
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script> <!--defer para o navegador executar o html primeiro-->
 </head>
@@ -13,10 +14,19 @@
     <main>
         <h1>Sorteador de Bingo</h1>
         <!--div para exibir o numero sorteado-->
-        <div id="numeroAtual" class="numero-atual">--</div>
+        <div id="numeroAtual" class="numeroAtual">--</div>
         <!--botão que está associado ao evento no js-->
         <button id="btnSortear">Sortear</button>
-        <div id="cartela" class="cartela"></div>
+        <table class="tabelaBingo">
+            <tr>
+                <th class="tituloBingo">B</th>
+                <th class="tituloBingo">I</th>
+                <th class="tituloBingo">N</th>
+                <th class="tituloBingo">G</th>
+                <th class="tituloBingo">O</th> 
+            </tr>
+        </table>
+        <div id="cartela" class="cartelaBingo"></div>
     </main>
 </body>
 </html>

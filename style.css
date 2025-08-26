@@ -17,10 +17,10 @@ h1 {
   font-size: 80px;
   color: #ffffff;
   text-shadow: 2px 2px 5px #000;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
-.numero-atual {
+.numeroAtual {
   font-size: 80px;
   font-weight: bold;
   color: #ffffff;
@@ -28,52 +28,80 @@ h1 {
   text-shadow: 3px 3px 8px #000;
 }
 
-button {
+#btnSortear {
   padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
   border: none;
   border-radius: 10px;
   background: #0d0e20;
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  transition: transform 0.2s;
+  transition: 0.5s ease;
 }
 
-button:hover {
-  transform: scale(1.05);
+#btnSortear:hover {
   background: #2d1c7f;
 }
 
-.cartela {
+.cartelaBingo {
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: 15px;
   margin-top: 30px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 400px;
+  margin: auto;
 }
 
+/* estilização para o número da cartela */
 .numero {
-  width: 50px;
+  width: 90px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   background: #0d0e20;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
   box-shadow: inset 0 0 5px #000;
   transition: all 0.3s;
 }
 
+/* class de css para marcar o número que foi sorteado */
 .sorteado {
   background: #2d1c7f;
   color: #fff;
   transform: scale(1.1);
   box-shadow: 0 0 15px #000000;
+} 
+
+.tabelaBingo {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.tabelaBingo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.tituloBingo {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 8px;
+  padding: 30px;
+  gap: 10px;
+  font-family: 'Jersey 20', sans-serif;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px #000;
 }

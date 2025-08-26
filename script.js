@@ -15,7 +15,7 @@ numerosDisponiveis.forEach(num => { // forEach percorre cada número do array
 // função para sortear número aleatório
 function sortearNumero() {
   if (numerosDisponiveis.length === 0) {
-    alert("Os números já foram sorteados");
+    alert("Todos os números foram sorteados");
     return;
   }
 
