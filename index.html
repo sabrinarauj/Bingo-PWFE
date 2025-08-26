@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <title>Bingo</title>
+    <title>Sorteador - Bingo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script> <!--defer para o navegador executar o html primeiro-->
 </head>
 
 <body>
-    <main class="conteudo">
-        <div class="sorteador">
+    <!--conteudo principal da página-->
+    <main>
         <h1>Sorteador de Bingo</h1>
-        <p>Número sorteado:</p>
-        <button class="sortear">Sortear</button>
-    </div>
+        <!--div para exibir o numero sorteado-->
+        <div id="numeroAtual" class="numero-atual">--</div>
+        <!--botão que está associado ao evento no js-->
+        <button id="btnSortear">Sortear</button>
+        <div id="cartela" class="cartela"></div>
     </main>
 </body>
 </html>
